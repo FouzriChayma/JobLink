@@ -1,6 +1,13 @@
 server:
   port: 8765
 
+keycloak:
+  server-url: http://keycloak:8080
+  realm: joblink
+  admin:
+    username: admin
+    password: ${KEYCLOAK_ADMIN_PASSWORD:admin}
+
 spring:
   application:
     name: api-gateway
